@@ -5,9 +5,11 @@
     "access": "public"
   },
   "description": "Create an array containing a range of numbers",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
   "scripts": {
-    "build": "npx tsc -p . && rollup index.js --format umd --file index.js && npx uglifyjs --compress --mangle -o index.js -- index.js",
+    "build": "npx tsc -p . && rollup -c",
     "pretest": "npm run -s build",
     "test": "ava --verbose test.js",
     "prepublish": "npm run -s build"
@@ -19,7 +21,7 @@
   "devDependencies": {
     "ava": "^0.25.0",
     "rollup": "^0.66.4",
-    "typescript": "^3.1.1",
-    "uglify-js": "^3.4.9"
+    "rollup-plugin-uglify": "^6.0.0",
+    "typescript": "^3.1.1"
   }
 }
