@@ -1,4 +1,5 @@
 import { uglify } from "rollup-plugin-uglify";
+import commonjs from 'rollup-plugin-commonjs';
 import pkg from './package.json';
 
 export default [
@@ -9,7 +10,7 @@ export default [
 			file: pkg.browser,
 			format: 'umd'
 		},
-		plugins: [ uglify() ]
+		plugins: [ commonjs(), uglify() ]
 	},
 	{
 		input: 'index.js',
