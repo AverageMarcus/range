@@ -1,0 +1,23 @@
+{
+  "name": "@averagemarcus/range",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Create an array containing a range of numbers",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsc -p . && npx uglifyjs --compress --mangle -o index.js -- index.js",
+    "pretest": "npm run -s build",
+    "test": "ava --verbose test.js",
+    "prepublish": "npm run -s build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "typescript": "^3.1.1",
+    "uglify-js": "^3.4.9"
+  }
+}
