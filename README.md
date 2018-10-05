@@ -21,6 +21,9 @@ console.log(range(1, 10, 1));
 
 The latest version of Chrome, Firefox, Edge, and Safari as well as Node.js.
 
+```html
+<script src="https://unpkg.com/@averagemarcus/range/dist/index.umd.js"></script>
+```
 
 ## Maintainers
 
