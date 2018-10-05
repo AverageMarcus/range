@@ -17,7 +17,7 @@
   "keywords": [],
   "author": "Marcus Noble",
   "repository": "averagemarcus/range",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "ava": "^0.25.0",
     "rollup": "^0.66.4",
