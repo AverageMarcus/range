@@ -11,7 +11,7 @@ $ npm install @averagemarcus/range
 ## Usage
 
 ```js
-import range from 'range';
+import range from '@averagemarcus/range';
 
 console.log(range(1, 10, 1));
 //=> `[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]`
